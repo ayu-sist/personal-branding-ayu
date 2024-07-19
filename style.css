@@ -1,0 +1,288 @@
+/* Menghapus margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+/* Background wallpaper untuk body */
+body {
+    background-image: url('gambar/ayu.jpeg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover; /* Menutupi seluruh elemen body */
+    background-position: center; /* Memusatkan gambar */
+    background-attachment: fixed; /* Mengunci latar belakang saat scroll */
+}
+
+/* Navigasi */
+.navigasi {
+    background-color: #3b4997;
+    width: 100%;
+    height: 65px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navigasi di atas elemen lainnya */
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu {
+    margin-left: 620px;
+    padding-top: 27px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    font-style: italic;
+}
+
+/* Banner */
+.banner {
+    background-color: #3b5997;
+    height: 650px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner img {
+    border-radius: 50px;
+    height: 230px;
+    border: 6px solid white;
+    margin-top: 100px;
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.banner button:hover {
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: lightblue;
+    font-size: 70px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Saya Ayu Dwi Nengtias';
+    }
+    70% {
+        content: 'Terimakasih Sudah Singgah!';
+    }
+}
+
+/* About */
+.about {
+    text-align: center;
+    color: black;
+    margin-top: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-content: center;
+}
+
+.about img {
+    border-radius: 10%;
+    height: 200px;
+    border: 6px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.about button:hover {
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Pendidikan */
+.box-pendidikan {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 100px;
+    margin-left: 25px;
+    align-content: center;
+}
+
+.box-kiri, .box-tengah, .box-kanan {
+    width: 400px; /* Lebar box diperbesar */
+    height: 400px; /* Tinggi box diperbesar */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px;
+    margin: 50px 15px; /* Jarak antar box lebih kecil */
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box; /* Memastikan padding tidak menambah ukuran box */
+}
+
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+.box-pendidikan h3, p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+/* Mengatur ukuran gambar di dalam box */
+.box-kiri img, .box-tengah img, .box-kanan img {
+    width: 100px; /* Menentukan lebar gambar yang lebih besar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-bottom: 15px; /* Jarak antara gambar dan teks */
+}
+
+/* Softskill */
+.box-softskill {
+    text-align: center;
+    color: #4d4d4d;
+    margin: 0px auto;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.box-softskill .box-kiri, 
+.box-softskill .box-tengah, 
+.box-softskill .box-kanan {
+    width: 400px; /* Lebar box diperbesar */
+    height: 450px; /* Tinggi box diperbesar */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px;
+    margin: 50px 15px; /* Jarak antar box lebih kecil */
+    border-radius: 10px;
+    float: left;
+}
+
+.box-softskill .box-kiri:hover, 
+.box-softskill .box-tengah:hover, 
+.box-softskill .box-kanan:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+.box-softskill h3, p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+/* Pengalaman */
+.box-pengalaman {
+    text-align: center; /* Mengubah text alignment menjadi tengah */
+    color: #4d4d4d;
+    margin-top: 100px; /* Menyesuaikan jarak atas untuk menyeimbangkan tampilan */
+    padding: 0 20px; /* Menambahkan padding untuk memberikan jarak dari tepi */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pengalaman-item {
+    width: 100%; /* Mengatur lebar item menjadi 100% dari lebar kontainer */
+    max-width: 1150px; /* Menentukan lebar maksimum item */
+    background-color: #f0f0f0;
+    text-align: center; /* Mengubah text alignment menjadi tengah */
+    padding: 30px;
+    margin: 8px 0; /* Mengatur jarak atas dan bawah item, tanpa margin samping otomatis */
+    border-radius: 10px;
+    float: left; /* Mengatur agar item mengalir ke kiri */
+}
+
+.pengalaman-item:hover {
+    background-color: #3b5999;
+    color: white;
+}
+
+.pengalaman-item h3, .pengalaman-item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+}
+
+
+/* Kontak */
+.box-kontak {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 100px;
+}
+
+.box-kontak h1 {
+    margin-bottom: 100px;
+}
+
+.kontak-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Jarak antara setiap item */
+}
+
+.kontak-item img {
+    width: 50px; /* Menentukan lebar gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.kontak-item p {
+    margin: 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 3px;
+    margin: 100px auto 0px;
+    text-align: center;
+}
